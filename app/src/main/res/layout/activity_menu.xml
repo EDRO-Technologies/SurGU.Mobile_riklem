@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context=".menuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/forrect"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/chatb"
+            android:layout_width="10dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:src="@drawable/user"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/besedb"
+            android:layout_width="10dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/people"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/menub"
+            android:layout_width="10dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Меню"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profilem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <View
+        android:id="@+id/policy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/settngs"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/settingsm"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/settngs"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/profilem"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/settngs"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/policyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="Правовая информация"
+        app:layout_constraintStart_toEndOf="@id/policyimg"
+        app:layout_constraintTop_toTopOf="@id/policy"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/policyimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="@id/policy"
+        app:layout_constraintTop_toTopOf="@id/policy"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="14dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/policy"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/settingst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:layout_constraintStart_toEndOf="@id/settingsimg"
+        app:layout_constraintTop_toTopOf="@id/settingsm"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="Настройки" />
+
+    <ImageView
+        android:id="@+id/settingsimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:background="@android:color/transparent"
+        android:src="@drawable/settings"
+        app:tint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/settingsm"
+        app:layout_constraintTop_toTopOf="@id/settingsm"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/profilet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/profileimg"
+        app:layout_constraintTop_toTopOf="@id/profilem"
+        android:layout_marginLeft="15dp"
+        android:clickable="false"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:maxWidth="350dp"
+        android:text="Профиль" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="@id/profilem"
+        app:layout_constraintTop_toTopOf="@id/profilem"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="14dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/profile"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

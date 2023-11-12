@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035817496972",
+    "project_id": "chat-1825d",
+    "storage_bucket": "chat-1825d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035817496972:android:c53f70a31b2a9b02b066a9",
+        "android_client_info": {
+          "package_name": "com.r1klem.chat4weeek"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBUQWAyL6Hqsha3GYrJcv7XY4Ntsl1ofM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
